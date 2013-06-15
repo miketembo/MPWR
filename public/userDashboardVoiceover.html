@@ -32,15 +32,18 @@
 
   <body>
 
-          <audio id = "post_clip">
-          <source src="voiceovers/post.ogg"></source>
-          </audio>
+    <audio id = "post" class = "voiceovers">
+    <source src="voiceovers/post.ogg"></source>
+    </audio>
+    <audio id = "play" class = "voiceovers">
+    <source src="voiceovers/play.ogg"></source>
+    </audio>
 
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" id="nav" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -80,7 +83,8 @@
 
             <h1>User Dashboard</h1>
             <p>Video stuff here</p>
-            <button id = "post_button" class = "btn btn-primary">post video!</button>
+            <button id = "post" class = "btn btn-primary">post video!</button>
+            <button id = "play" class = "btn btn-primary">play video!</button>
             <!-- <p><a href="#" class="btn btn-primary btn-large">Enter &raquo;</a></p> -->
           </div>
             
@@ -95,7 +99,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>
-      <script src="js/main.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/main.js"></script>
     <script> 
       $(function() {
         $(".collapse").collapse({ toggle: true });

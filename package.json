@@ -1,0 +1,7 @@
+{
+  "name": "MeToo",
+  "description": "Let My Voice Count",
+  "dependencies": {
+    "express": "3.2.6"
+  }
+}

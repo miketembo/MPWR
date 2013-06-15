@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Le styles -->
     <link href="./js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -35,11 +34,6 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="brand" href="#">MeTooVlog</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
@@ -48,9 +42,9 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">Account Settings</a></li>
-              <li><a href="#contact">Help</a></li>
+              <li><a href="#help">Help</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
@@ -66,68 +60,67 @@
               <li><a href="#"></a>NewsFeed Page</li>
               <li><a href="#"></a>Vlog Page</li>
             </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-         <div class="span9">
-          <div class="hero-unit">
+          </div>
+        </div>
+        <div class="span9">
+        <div class="row-fluid">
             <h1>Customize Dashboard</h1>
             <p>This is where you can costumize your meToo application for your organization and/or your unique users.</p>
-            <!-- <p><a href="#" class="btn btn-primary btn-large">Enter &raquo;</a></p> -->
-          </div>
-          <div class="row-fluid">
-            <div class="span9">
-              <h2>Customize User Dashboard Page</h2>
-                <div class="accordion" id="accordion2">
-                  <!-- first toggle thing -->
-                  <div class="accordion-group">
-                    <div class="accordion-heading">
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                        Customize Icons
-                      </a>
-                    </div>
-                    <div id="collapseOne" class="accordion-body collapse in">
-                      <div class="accordion-inner">
-                        <h5> Click on icon change or upload</h5>
-                        <ul>
-                          <li> record audio <a href=#<i class="icon-star"></i></a></li>
-                          <li> record video <a href=#<i class="icon-star"></i></a></li>
-                          <li> play video/audio<a href=#<i class="icon-star"></i></a> </li>
-                          <li> stop <a href=#<i class="icon-star"></i></a></li>
-                          <li> yes <a href=#<i class="icon-star"></i></a></li>
-                          <li> no <a href=#<i class="icon-star"></i></a></li>
-                          <li> volume <a href=#<i class="icon-star"></i></a></li>
-                          <li> expand/minimize <a href=#<i class="icon-star"></i></a></li>
-                      </div>
+        </div>
+        <div class="row-fluid">
+            <h2>Customize User Dashboard Page</h2>
+              <div class="accordion" id="accordion2">
+                <!-- first accordian panel -->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Customize Icons
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <h5> Change or create new buttons</h5>
+                      <ul>
+                        <li> Record Audio <button><i class="icon-star"></i></button></li>
+                        <li> Record Video <button><i class="icon-star"></i></button></li>
+                        <li> Play <button><i class="icon-star"></i></button></li>
+                        <li> Stop <button><i class="icon-star"></i></button></li>
+                        <li> Yes <button><i class="icon-star"></i></button></li>
+                        <li> No <button><i class="icon-star"></i></button></li>
+                        <li> Volume Control <button><i class="icon-star"></i></button></li>
+                        <li> Expand <button><i class="icon-star"></i></button></li>
+                      </ul>
                     </div>
                   </div>
-                  <!-- second toggle thing -->
+                </div>
+                <!-- second accordian panel -->
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      Customize Voice-Overs
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      Voice-Over Customization Options...
+                    </div>
+                  </div>
+                  <!-- third accordian panel -->
                   <div class="accordion-group">
                     <div class="accordion-heading">
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                        Customize Voice-Overs
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                        Customize Video Instructions
                       </a>
                     </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
+                    <div id="collapseThree" class="accordion-body collapse in">
                       <div class="accordion-inner">
-                        Voice-Over Customization Options...
-                      </div>
-                    </div>
-                    <!-- last toggle thing -->
-                    <div class="accordion-group">
-                      <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                          Customize Video Instructions
-                        </a>
-                      </div>
-                      <div id="collapseOne" class="accordion-body collapse in">
-                        <div class="accordion-inner">
-                          Doesn't Work
-                        </div>
+                        Video instructions..
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
             
       <footer>
         <p>&copy; MeToo 2013</p>

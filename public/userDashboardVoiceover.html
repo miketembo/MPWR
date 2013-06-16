@@ -9,9 +9,6 @@
 
     <!-- Le styles -->
     <link href="./js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./css/helpAnimations.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -34,7 +31,21 @@
   </head>
 
   <body>
-
+    <audio id = "help" class = "voiceovers">
+    <source src="voiceovers/help.ogg"></source>
+    </audio>
+    <audio id = "record" class = "voiceovers">
+    <source src="voiceovers/record.ogg"></source>
+    </audio>
+    <audio id = "play" class = "voiceovers">
+    <source src="voiceovers/play.ogg"></source>
+    </audio>
+    <audio id = "search" class = "voiceovers">
+    <source src="voiceovers/search.ogg"></source>
+    </audio>
+    <audio id = "view" class = "voiceovers">
+    <source src="voiceovers/view.ogg"></source>
+    </audio>
 
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -48,6 +59,7 @@
           <a class="brand" href="#">MeTooVlog</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
+              <button id="help" class="btn-primary" style="height: 100px; width: 200p"><i class="icon-book"></i></button>
 
             </p>
             <ul class="nav">
@@ -80,7 +92,8 @@
 
             <h1>User Dashboard</h1>
             <p>Video stuff here</p>
-
+            <button id = "record" class = "btn btn-primary">record video!</button>
+            <button id = "play" class = "btn btn-primary">play video!</button>
             <!-- <p><a href="#" class="btn btn-primary btn-large">Enter &raquo;</a></p> -->
           </div>
             
@@ -91,6 +104,8 @@
     </div>
     </body>
 
+
+    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>

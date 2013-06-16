@@ -10,8 +10,27 @@ $(document).ready(function(){
   //   poust_audio.currentTime = 0;
   // });
 
+$('button#help').on('click', function(){
+  $('button#record').addClass('highlight');
+  setTimeout(function(){
+    $('button#record').removeClass('highlight');
+    $('button#play').addClass('highlight');
+  },7000);
+  setTimeout(function(){
+    $('button#play').removeClass('highlight');
+    $('button#view').addClass('highlight');
+  },12000);
+  setTimeout(function(){
+    $('button#view').removeClass('highlight');
+    $('button#search').addClass('highlight');
+  },19000);
+    setTimeout(function(){
+    $('button#search').removeClass('highlight');
+  },25000);
+})
+
   var $buttons = $('button');
-  debugger;
+  // debugger;
   $buttons = $buttons.add($('li#search'));
   $buttons = $buttons.add($('li#view'));
 
@@ -19,7 +38,7 @@ $(document).ready(function(){
   _.each($buttons, function(button, key, list){
     var audioElement = "audio#" + button.id;
     var $voiceover_audio = $(audioElement)[0];
-    console.log(button);
+    // console.log(button);
     $(button).on('mouseenter', function(){
       
       $voiceover_audio.play();

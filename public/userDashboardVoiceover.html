@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="./js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/helpAnimations.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
     <style type="text/css">
@@ -33,7 +34,9 @@
   </head>
 
   <body>
-
+    <audio id = "help" class = "voiceovers">
+    <source src="voiceovers/help.ogg"></source>
+    </audio>
     <audio id = "record" class = "voiceovers">
     <source src="voiceovers/record.ogg"></source>
     </audio>
@@ -59,7 +62,8 @@
           <a class="brand" href="#">MeTooVlog</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
+              <button id="help" class="btn-primary" style="height: 100px; width: 200px"><i class="icon-book"></i></button>
+
             </p>
             <ul class="nav">
               <li class="active"><a href="#"><i class='icon-heart'></i></a></li>
@@ -78,7 +82,7 @@
             <ul class="nav nav-list">
               <li class="nav-header">Customizable Pages</li>
               <li class="active"><a href="#">Dashboard</a></li>
-              <li><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a> Videos</li>
+              <li><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a> Home </li>
               <li id = "view"><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>NewsFeed</li>
               <li id = "search"><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>Search</li>
             </ul>
@@ -103,8 +107,6 @@
     </div>
     </body>
 
-
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>

@@ -1,13 +1,46 @@
 
-.brand{
-  margin-top:10px;
-}
 .navbar-text a{
   color:#fff;
+}
+.navbar-inverse .navbar-inner {
+  background-color: #27ae60;
+  background-repeat: repeat-x;
+  border-color: rgb(31, 224, 113);
+  border-bottom: 15px solid rgb(31, 224, 113);
+  min-height:50px;
+}
+.logo {
+  font-size: 40px;
+  text-align: center;
+  margin-left: 15px;
+  text-shadow: -1px -2px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+.logotext{
+  font-size: 20px;
+  margin-top:10px;
+  font-family: 'Handlee', cursive;
+}
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 10px 20px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 40px 10px 0 0;
 }
 
 h1{
   font-size: 30px;
+  font-family:'Handlee', cursive;
 }
 h2{
   font-size: 20px;
@@ -64,4 +97,16 @@ button{
 
 .highlight {
   box-shadow: 0px 0px 3px 5px gold;
+}
+.container-fluid {
+padding-right: 20px;
+padding-left: 20px;
+margin-top: 40px;
+}
+.well {
+margin: 0 0 0 -20px;
+width: 150px;
+}
+.main-content {
+margin-top: 20px;
 }

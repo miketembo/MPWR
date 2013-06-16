@@ -40,7 +40,7 @@ $('button#help').on('click', function(){
     var $voiceover_audio = $(audioElement)[0];
     // console.log(button);
     $(button).on('mouseenter', function(){
-
+      
       $voiceover_audio.play();
     });
     $(button).on('mouseleave', function(){

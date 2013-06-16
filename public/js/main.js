@@ -11,6 +11,10 @@ $(document).ready(function(){
   // });
 
 $('button#help').on('click', function(){
+  var audioElement = "audio#help";
+  var $voiceover_audio = $(audioElement)[0];
+  $voiceover_audio.play();
+
   $('button#record').addClass('highlight');
   setTimeout(function(){
     $('button#record').removeClass('highlight');
@@ -31,21 +35,22 @@ $('button#help').on('click', function(){
 
   var $buttons = $('button');
   // debugger;
-  $buttons = $buttons.add($('li#search'));
-  $buttons = $buttons.add($('li#view'));
 
 
   _.each($buttons, function(button, key, list){
     var audioElement = "audio#" + button.id;
-    var $voiceover_audio = $(audioElement)[0];
+    if(!(audioElement === "audio#help")){
+      var $voiceover_audio = $(audioElement)[0];
     // console.log(button);
-    $(button).on('mouseenter', function(){
-      
-      $voiceover_audio.play();
-    });
-    $(button).on('mouseleave', function(){
-      $voiceover_audio.pause();
-      $voiceover_audio.currentTime = 0;
+
+      $(button).on('mouseenter', function(){
+       
+        $voiceover_audio.play();
+      });
+      $(button).on('mouseleave', function(){
+        $voiceover_audio.pause();
+        $voiceover_audio.currentTime = 0;
+      });
+      }
     });
   });
-});

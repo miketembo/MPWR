@@ -28,15 +28,18 @@ h2{
   margin-top:-30px;
 }
 .icon-creation li{
+  list-style-type: none;
+  width:300px;
+}
+.icon-creation span{
   float:left;
-  width:200px;
-  display: inline-block;
-  list-style: none;
+  width:100px;
+  margin:5px 0;
 }
 .icon-creation button{
   float:left;
-  display:inline-block;
-  margin-left:200px;
+  width:45px;
+  margin:5px 0 5px 60px;
 }
 
 button{
@@ -57,7 +60,6 @@ button{
           border-radius: 4px;
   box-shadow: 0 0 0 1px #27ae60, 0 0 0 3px #ecf0f1;
   padding:12px 14px;
-  margin:5px;
 }
 
 .highlight {

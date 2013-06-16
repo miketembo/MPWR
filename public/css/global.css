@@ -122,6 +122,12 @@ button{
   margin-top:2px;
   box-shadow: 0 0 0 2px #3a4141, 0 0 0 3px #ecf0f1;
 }
+.play-button{
+  width: 85px;
+  display: block;
+  margin-top: 150px;
+  margin-right: 10px;
+}
 
 #icon-instruction{
   text-align: center;

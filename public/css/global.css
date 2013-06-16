@@ -20,6 +20,9 @@ h2{
 .well .active a, .well .active a:hover{
   background-color: #4f5858;
 }
+.well img{
+  size:50px;
+}
 .main-content{
   margin-top:-30px;
 }

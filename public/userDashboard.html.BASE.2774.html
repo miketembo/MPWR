@@ -10,8 +10,6 @@
     <!-- Le styles -->
     <link href="./js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC|Indie+Flower|Handlee' rel='stylesheet' type='text/css'>
-
     <link href="./css/global.css" rel="stylesheet">
     <style type="text/css">
       body {
@@ -55,22 +53,21 @@
     <source src="voiceovers/home.ogg"></source>
     </audio>
 
-    <div class="navbar navbar-inverse navbar-inverse-blue navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
           <button type="button"  id = "nav" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-<a class="brand" href="#"><span class="logo"><i class="icon-plus icon-light"></i></button></span><span class="logo logotext">MPWR</span></a>          <div class="nav-collapse collapse">
+        <a class="brand" href="#"><img src="./js/lib/bootstrap/img/logo.png"/>Me Too</a>
+          <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
 <!--               Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
             </p> -->
-            <button id="help" class="navbar-text pull-right highlight-button" ><i class="icon-question-sign icon-light icon-4x"></i></button>
-            <img id="toggle" class="pull-right" src="./img/forward.png"></img>
+            <button id="help" class="btn-primary navbar-text pull-right" ><i class="icon-book icon-light icon-4x"></i></button>
 
-          </div>
+          </div><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -79,52 +76,31 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-             <li> <button class="highlight-button" id="home"><i class="icon-home icon-light icon-4x"></i></button></li>
-             <li> <button class="highlight-button" style="margin-top: 10px; margin-bottom: 10px;" id="view"><i class="icon-globe icon-light icon-4x"></i></button></li>
-             <li><button class="highlight-button" id="search"><i class="icon-search icon-light icon-4x"></i></button></li>
+             <li> <button style="width: 90px" id="home"><i class="icon-home icon-light icon-4x"></i></button></li>
+             <li> <button style="margin-top: 10px; margin-bottom: 10px; width: 90px" id="view"><i class="icon-globe icon-light icon-4x"></i></button></li>
+             <li><button style="width: 90px" id="search"><i class="icon-search icon-light icon-4x"></i></button></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
          <div class="span9">
-      <div id="tout_widget_glcxax" class="tout-widget" style="display: inline; float: left;"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
-
-      <div class="well sidebar-nav" style=" float: right; width: 300px; height: 1100px">
-        <ul class="nav nav-list">
-
-      <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
-      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
-
-      <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
-      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
-
-       <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
-      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
-    </ul>
-
-    </div>
-         <div class="span9 main-content"><button id = "record" class = "highlight-button"><i class="icon-facetime-video icon-light icon-4x"></i></button>
-      <button id = "play" class = "highlight-button"><i class="icon-play icon-light icon-4x"></i></button>
-
       <div id="tout_widget_glcxax" class="tout-widget"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
 
-      
+      <button id = "record" class = "btn btn-primary">record video!</button>
+      <button id = "play" class = "btn btn-primary">play video!</button>
+
       <footer>
-        <p>&copy; MPWR 2013</p>
+        <p>&copy; MeToo 2013</p>
       </footer>
 
     </div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>
     <script src="js/lib/underscore.js"></script>
     <script src="js/main.js"></script>
     <script> 
       $(function() {
         $(".collapse").collapse({ toggle: true });
-          window.test = setInterval(function(){
-          $( "#toggle" ).fadeToggle();
-        }, 500);
       }); 
     </script>
 

@@ -105,6 +105,11 @@ button{
 
 }
 
+#icon-instruction{
+  text-align: center;
+
+}
+
 .highlight {
   box-shadow: 0px 0px 3px 5px gold;
   -webkit-animation-name: yellowPulse;

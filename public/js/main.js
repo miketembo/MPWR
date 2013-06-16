@@ -15,22 +15,27 @@ $('button#help').on('click', function(){
   var $voiceover_audio = $(audioElement)[0];
   $voiceover_audio.play();
 
-  $('button#record').addClass('highlight');
+  $('button#home').addClass('highlight');
+  setTimeout(function(){
+    $('button#home').removeClass('highlight');
+    $('button#record').addClass('highlight');
+  },7000);
+
   setTimeout(function(){
     $('button#record').removeClass('highlight');
     $('button#play').addClass('highlight');
-  },7000);
+  },14000);
   setTimeout(function(){
     $('button#play').removeClass('highlight');
     $('button#view').addClass('highlight');
-  },12000);
+  },20000);
   setTimeout(function(){
     $('button#view').removeClass('highlight');
     $('button#search').addClass('highlight');
-  },19000);
+  },27000);
     setTimeout(function(){
     $('button#search').removeClass('highlight');
-  },25000);
+  },33000);
 })
 
   var $buttons = $('button');

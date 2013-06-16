@@ -1,19 +1,13 @@
 console.log('Hello World');
 
 $(document).ready(function(){
-  // var poust_audio = $("audio#post_clip")[0];
-  // $("button#post_button").mouseenter(function() {
-  //   poust_audio.play();
-  // });
-  // $("button#post_button").mouseleave(function(){
-  //   poust_audio.pause();
-  //   poust_audio.currentTime = 0;
-  // });
+
 
 $('button#help').on('click', function(){
   var audioElement = "audio#help";
   var $voiceover_audio = $(audioElement)[0];
   $voiceover_audio.play();
+  $('#toggle').remove();
 
   $('button#home').addClass('highlight');
   setTimeout(function(){

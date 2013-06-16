@@ -62,12 +62,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
+<<<<<<< HEAD
+        <a class="brand" href="#"><img src="./js/lib/bootstrap/img/logo.png"/>Me Too</a>
+          <div class="nav-collapse collapse">
+=======
 <a class="brand" href="#"><span class="logo"><i class="icon-plus icon-light"></i></button></span><span class="logo logotext">MPWR</span></a>          <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
 <!--               Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
             </p> -->
             <button id="help" class="navbar-text pull-right" ><i class="icon-question-sign icon-light icon-4x"></i></button>
+>>>>>>> c02659ad820ab3a9a71dac2f4e5c1610605571f0
+
+            <button id="help" class="btn-primary navbar-text pull-right" style="margin: 30px;" ><i class="icon-book icon-light icon-4x"></i></button>
             <img id="toggle" class="pull-right" src="./img/forward.png"></img>
 
 
@@ -86,6 +92,7 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+<<<<<<< HEAD
          <div class="span9">
       <div id="tout_widget_glcxax" class="tout-widget" style="display: inline; float: left;"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
 
@@ -103,6 +110,7 @@
     </ul>
 
     </div>
+=======
          <div class="span9 main-content"><button id = "record" class = "highlight-button"><i class="icon-facetime-video icon-light icon-4x"></i></button>
       <button id = "play" class = "highlight-button"><i class="icon-play icon-light icon-4x"></i></button>
 
@@ -112,6 +120,7 @@
       <footer>
         <p>&copy; MeToo 2013</p>
       </footer>
+>>>>>>> c02659ad820ab3a9a71dac2f4e5c1610605571f0
 
     </div>
 

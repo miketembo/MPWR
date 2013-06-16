@@ -9,7 +9,6 @@
 
     <!-- Le styles -->
     <link href="./js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
     <link href="./css/global.css" rel="stylesheet">
     <style type="text/css">
@@ -35,9 +34,25 @@
 
   <body>
 
+    <audio id = "help" class = "voiceovers">
+    <source src="voiceovers/entireClip.ogg"></source>
+    </audio>
+    <audio id = "record" class = "voiceovers">
+    <source src="voiceovers/record.ogg"></source>
+    </audio>
+    <audio id = "play" class = "voiceovers">
+    <source src="voiceovers/play.ogg"></source>
+    </audio>
+    <audio id = "search" class = "voiceovers">
+    <source src="voiceovers/search.ogg"></source>
+    </audio>
+    <audio id = "view" class = "voiceovers">
+    <source src="voiceovers/view.ogg"></source>
+    </audio>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button"  id = "nav" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -45,8 +60,10 @@
         <a class="brand" href="#"><img src="./js/lib/bootstrap/img/logo.png"/>Me Too</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
-            </p>
+<!--               Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
+            </p> -->
+            <button id="help" class="btn-primary navbar-text pull-right" ><i class="icon-book icon-light icon-4x"></i></button>
+
             <ul class="nav">
               <li class="active"><a href="#"><i class='icon-heart'></i></a></li>
               <li><a href="#about"><i class='icon-film'></i></a></li>
@@ -61,14 +78,17 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-             <li> <button><i class="icon-home icon-light icon-4x"></i></button></li>
-             <li> <button><i class="icon-globe icon-light icon-4x"></i></button></li>
-             <li><button><i class="icon-search icon-light icon-4x"></i></button></li>
+             <li> <button id="home"><i class="icon-home icon-light icon-4x"></i></button></li>
+             <li> <button id="view"><i class="icon-globe icon-light icon-4x"></i></button></li>
+             <li><button id="search"><i class="icon-search icon-light icon-4x"></i></button></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
          <div class="span9">
       <div id="tout_widget_glcxax" class="tout-widget"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
+
+      <button id = "record" class = "btn btn-primary">record video!</button>
+      <button id = "play" class = "btn btn-primary">play video!</button>
 
       <footer>
         <p>&copy; MeToo 2013</p>
@@ -78,6 +98,8 @@
 
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/main.js"></script>
     <script> 
       $(function() {
         $(".collapse").collapse({ toggle: true });

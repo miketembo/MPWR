@@ -122,6 +122,10 @@ button{
   margin-top:2px;
   box-shadow: 0 0 0 2px #3a4141, 0 0 0 3px #ecf0f1;
 }
+
+.nav-list .highlight-button{
+  margin-bottom: 10px;
+}
 .play-button{
   width: 85px;
   display: block;

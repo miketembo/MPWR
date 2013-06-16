@@ -62,12 +62,12 @@
           </button>
         <a class="brand" href="#"><img src="./js/lib/bootstrap/img/logo.png"/>Me Too</a>
           <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-<!--               Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
-            </p> -->
-            <button id="help" class="btn-primary navbar-text pull-right" ><i class="icon-book icon-light icon-4x"></i></button>
 
-          </div><!--/.nav-collapse -->
+            <button id="help" class="btn-primary navbar-text pull-right" style="margin: 30px;" ><i class="icon-book icon-light icon-4x"></i></button>
+            <img id="toggle" class="pull-right" src="./img/forward.png"></img>
+
+
+          </div>
       </div>
     </div>
 
@@ -83,24 +83,36 @@
           </div><!--/.well -->
         </div><!--/span-->
          <div class="span9">
-      <div id="tout_widget_glcxax" class="tout-widget"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
+      <div id="tout_widget_glcxax" class="tout-widget" style="display: inline; float: left;"><script charset="utf-8" src="//www.tout.com/widgets/glcxax.js"></script></div>
 
-      <button id = "record" class = "btn btn-primary">record video!</button>
-      <button id = "play" class = "btn btn-primary">play video!</button>
+      <div class="well sidebar-nav" style=" float: right; width: 300px; height: 1100px">
+        <ul class="nav nav-list">
 
-      <footer>
-        <p>&copy; MeToo 2013</p>
-      </footer>
+      <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
+      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
+
+      <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
+      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
+
+       <li><button id = "record" style="width: 90px; float: left; display: inline; margin-top: 150px; margin-right: 10px" ><i class='icon-play-circle icon-light icon-4x'></i></button></li>
+      <li><button id = "play" style="width: 90px; float: left; display: inline; margin-top: 150px;"><i class='icon-remove icon-light icon-4x'></i></button></li>
+    </ul>
+
+    </div>
 
     </div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="./js/lib/bootstrap/js/bootstrap.js"></script>
     <script src="js/lib/underscore.js"></script>
     <script src="js/main.js"></script>
     <script> 
       $(function() {
         $(".collapse").collapse({ toggle: true });
+          window.test = setInterval(function(){
+          $( "#toggle" ).fadeToggle();
+        }, 500);
       }); 
     </script>
 

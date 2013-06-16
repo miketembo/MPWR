@@ -10,6 +10,7 @@
 <!--     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
  -->    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC|Indie+Flower|Handlee' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
       body {
@@ -36,7 +37,7 @@
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <a class="brand" href="#"><img src="./js/lib/bootstrap/img/logo.png"/></a>
+        <a class="brand" href="#"><span class="logo"><i class="icon-plus icon-light"></i></button></span><span class="logo logotext">MPWR</span></a>
         <div class="nav-collapse collapse">
           <p class="navbar-text pull-right">
             Logged in as <a href="#" class="navbar-link">HappyNonProf</a>
@@ -81,8 +82,22 @@
                     <div class="accordion-inner">
                       <h5> Change or create new buttons</h5>
                       <ul class="icon-creation">
-                        <li> <span>Record Audio</span> <button><i class="icon-microphone icon-light"></i></button></li>
-                        <li> <span>Record Video</span> <button><i class="icon-facetime-video icon-light"></i></button></li>
+                        <li> <span>Record Audio</span> <button><i class="icon-microphone icon-light" data-toggle="collapse" data-target="#demo"></i></button></li>
+                          <ul id="demo" class="collapse in"> 
+                            <li id = "icon-instruction">Click on an icon to change</li>
+                            <li><button><i class="icon-glass icon-light"></i></button></li>
+                            <li><button><i class="icon-music icon-light"></i></button><li>
+                            <li><button><i class="icon-search icon-light"></i></button><li>
+                            <li><button><i class="icon-envelope icon-light"></i></button><li>
+                          </ul>
+                        <li> <span>Record Video</span> <button><i class="icon-facetime-video icon-light" data-toggle="collapse" data-target="#demo2"></i></button></li>
+                        <ul id="demo2" class="collapse in"> 
+                            <li id = "icon-instruction">Click on an icon to change</li>
+                            <li><button><i class="icon-glass icon-light"></i></button></li>
+                            <li><button><i class="icon-music icon-light"></i></button><li>
+                            <li><button><i class="icon-search icon-light"></i></button><li>
+                            <li><button><i class="icon-envelope icon-light"></i></button><li>
+                        </ul>
                         <li> <span>Play</span> <button><i class="icon-play icon-light"></i></button></li>
                         <li> <span>Stop</span> <button><i class="icon-stop icon-light"></i></button></li>
                         <li> <span>Yes</span> <button><i class="icon-check icon-light"></i></button></li>

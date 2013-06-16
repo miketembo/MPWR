@@ -32,11 +32,17 @@
 
   <body>
 
-    <audio id = "post" class = "voiceovers">
-    <source src="voiceovers/post.ogg"></source>
+    <audio id = "record" class = "voiceovers">
+    <source src="voiceovers/record.ogg"></source>
     </audio>
     <audio id = "play" class = "voiceovers">
     <source src="voiceovers/play.ogg"></source>
+    </audio>
+    <audio id = "search" class = "voiceovers">
+    <source src="voiceovers/search.ogg"></source>
+    </audio>
+    <audio id = "view" class = "voiceovers">
+    <source src="voiceovers/view.ogg"></source>
     </audio>
 
 
@@ -71,8 +77,8 @@
               <li class="nav-header">Customizable Pages</li>
               <li class="active"><a href="#">Dashboard</a></li>
               <li><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a> Videos</li>
-              <li><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>NewsFeed</li>
-              <li><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>Search</li>
+              <li id = "view"><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>NewsFeed</li>
+              <li id = "search"><a href="#"><img src="http://placekitten.com/300/300" class="img-circle"></a></a>Search</li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -83,7 +89,7 @@
 
             <h1>User Dashboard</h1>
             <p>Video stuff here</p>
-            <button id = "post" class = "btn btn-primary">post video!</button>
+            <button id = "record" class = "btn btn-primary">post video!</button>
             <button id = "play" class = "btn btn-primary">play video!</button>
             <!-- <p><a href="#" class="btn btn-primary btn-large">Enter &raquo;</a></p> -->
           </div>
@@ -92,9 +98,10 @@
         <p>&copy; MeToo 2013</p>
       </footer>
 
-    </div><!--/.fluid-container
+    </div>
+    </body>
 
-    <!-- Le javascript
+
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
@@ -107,5 +114,5 @@
       }); 
     </script>
 
-  </body>
+
 </html>

@@ -11,12 +11,17 @@ $(document).ready(function(){
   // });
 
   var $buttons = $('button');
-  _.each($buttons, function(button, key, list){
+  debugger;
+  $buttons = $buttons.add($('li#search'));
+  $buttons = $buttons.add($('li#view'));
 
+
+  _.each($buttons, function(button, key, list){
     var audioElement = "audio#" + button.id;
     var $voiceover_audio = $(audioElement)[0];
+    console.log(button);
     $(button).on('mouseenter', function(){
-      debugger;
+
       $voiceover_audio.play();
     });
     $(button).on('mouseleave', function(){

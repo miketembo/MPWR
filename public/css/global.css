@@ -120,7 +120,7 @@ button{
   width: 85px;
   height: 85px;
   margin-top:2px;
-  box-shadow: 0 0 0 5px #3a4141, 0 0 0 3px #ecf0f1;
+  box-shadow: 0 0 0 2px #3a4141, 0 0 0 3px #ecf0f1;
 }
 
 #icon-instruction{
@@ -135,10 +135,17 @@ button{
   -webkit-animation-iteration-count: 3;
 }
 .container-fluid {
-padding-right: 20px;
-padding-left: 20px;
-margin-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 40px;
 }
 .main-content {
-margin-top: 40px;
+  margin-top: 40px;
+}
+.arrow{
+  height:80px;
+  width:80px;
+}
+.toutwindow{
+  margin-left:-200px;
 }

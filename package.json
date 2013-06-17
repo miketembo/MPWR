@@ -3,5 +3,13 @@
   "description": "Let My Voice Count",
   "dependencies": {
     "express": "3.2.6"
+  },
+  "subdomain": "ericrius1-MeToo",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.8.x"
   }
 }
